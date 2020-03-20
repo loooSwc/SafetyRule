@@ -1,0 +1,19 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: safety-spring-boot-main
+  jpa:
+    generate-ddl: false
+    show-sql: false
+    hibernate:
+      ddl-auto: none
+  datasource:
+    url: jdbc:mysql://47.104.111.123:3306/safety?useSSL=false&amp;zeroDateTimeBehavior=convertToNull&amp;useUnicode=true&amp;characterEncoding=UTF-8&amp;autoReconnect=true
+    username: root
+    password: root
+    driver-class: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    initialSize: 30
+    minIdle: 30
+    maxActive: 100
