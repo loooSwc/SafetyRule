@@ -1,5 +1,7 @@
 <van-search value="{{ value }}" placeholder="请输入搜索关键词"  bindsearch="search"/>
 <van-cell-group>
-    <van-cell wx:for="{{ruleList}}"  label="{{item}}" />
+    <van-cell wx:for="{{ruleList}}" title="{{item}}">
+     
+    </van-cell>
  
   </van-cell-group>
